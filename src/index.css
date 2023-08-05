@@ -18,9 +18,6 @@ html[data-color='violet'] {
   --brand: theme('colors.violet.600');
 }
 
-html[data-color='fuchsia'] {
-  --brand: theme('colors.fuchsia.500');
-}
 
 html[data-color='pink'] {
   --brand: theme('colors.pink.600');

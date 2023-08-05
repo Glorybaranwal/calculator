@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useFormik } from "formik";
-
 import TextField from "./TextField";
 import Outcome from "./Outcome";
 import Currency from "./Currency";
 import { initialFormState } from "../types";
 import { formValidationSchema } from "../validations";
+import { LinkHTMLAttributes } from "react";
 
 function Calculator() {
   const [form, setForm] = useState(initialFormState);
@@ -69,7 +69,7 @@ function Calculator() {
   }, []);
 
   return (
-    <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 dark:ring-gray-700 sm:mt-13 mt-16 lg:mx-0 lg:flex lg:max-w-none">
+    <div className="mx-auto max-w-xl rounded-xl ring-1 ring-gray-200 dark:ring-gray-700 sm:mt-13 mt-16 lg:mx-0 lg:flex lg:max-w-none">
       <div className="px-4 py-6 md:p-8 sm:p-10 lg:flex-auto items-center flex">
         <form
           method="POST"
@@ -111,8 +111,8 @@ function Calculator() {
         </form>
       </div>
 
-      <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-lg lg:flex-shrink-0">
-        <div className="rounded-2xl bg-gray-50 dark:bg-black text-center ring-1 ring-inset ring-gray-900/5 dark:ring-gray-700 lg:flex lg:flex-col lg:justify-center py-8">
+      <div className="lg:mt-0 lg:w-full lg:max-w-lg lg:flex-shrink-1">
+        <div className="rounded-2xl bg-gray-50 dark:bg-black text-center ring-1 ring-gray-900/5 dark:ring-gray-700 lg:flex lg:flex-col lg:justify-center py-8">
           <div className="space-y-8">
             <Outcome
               withDivider
@@ -130,6 +130,7 @@ function Calculator() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

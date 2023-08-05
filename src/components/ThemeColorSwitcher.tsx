@@ -24,7 +24,7 @@ function ThemeColorSwitcher() {
   if (!mounted) return null;
 
   return (
-    <div className="mb-20 flex items-center justify-center space-x-4">
+    <div className="mb-10 flex items-center justify-center space-x-4">
       {COLORS.map(({ id, name }) => (
         <span
           key={id}

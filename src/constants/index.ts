@@ -16,10 +16,6 @@ export const COLORS = [
     name: "bg-violet-600",
   },
   {
-    id: "fuchsia",
-    name: "bg-fuchsia-500",
-  },
-  {
     id: "pink",
     name: "bg-pink-600",
   },
